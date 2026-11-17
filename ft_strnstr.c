@@ -6,7 +6,7 @@
 /*   By: mazorin <mazorin@student.42barcelona.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 12:27:31 by mazorin           #+#    #+#             */
-/*   Updated: 2026/11/15 14:25:58 by mazorin          ###   ########.fr       */
+/*   Updated: 2026/11/17 14:22:47 by mazorin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	if (!*little)
 		return ((char *)big);
 	little_len = ft_strlen(little);
-	while (len >= little_len && *big)
+	while (len-- >= little_len && *big)
 	{
 		if (ft_strncmp(big, little, little_len) == 0)
 			return ((char *)big);
 		big++;
-		len--;
+//		len--;
 	}
 	return (NULL);
 }

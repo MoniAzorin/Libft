@@ -6,7 +6,7 @@
 /*   By: mazorin <mazorin@student.42barcelona.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/08 17:57:15 by mazorin           #+#    #+#             */
-/*   Updated: 2026/11/15 14:07:52 by mazorin          ###   ########.fr       */
+/*   Updated: 2026/11/17 00:00:05 by mazorin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (n--)
 	{
 		if (*p1 != *p2)
-			return (p1 - p2);
+			return (*p1 - *p2);
 		p1++;
 		p2++;
 	}

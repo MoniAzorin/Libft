@@ -1,7 +1,7 @@
 
 # Libft
 
-*This project has been created as part of the 42 curriculum by mazorin*.
+*This project has been created as part of the 42 curriculum by mazorin.*
 
 ## Description
 
@@ -134,7 +134,6 @@ int main(void)
 - Makefile Tutorial: https://makefiletutorial.com/
 - GNU Make manual: https://www.gnu.org/software/make/manual/
 - Linked list tutorial : https://www.geeksforgeeks.org/dsa/linked-list-data-structure/
-- Valgrind and AddressSanitizer documentation, used to detect leaks and invalid accesses
 
 ### Use of AI
 

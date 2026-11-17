@@ -6,7 +6,7 @@
 /*   By: mazorin <mazorin@student.42barcelona.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 12:23:15 by mazorin           #+#    #+#             */
-/*   Updated: 2026/11/15 14:15:02 by mazorin          ###   ########.fr       */
+/*   Updated: 2026/11/16 22:26:13 by mazorin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	srclen;
 
 	dstlen = 0;
-	while (dst[dstlen] && dstlen < size)
+	while (dstlen < size && dst[dstlen])
 		dstlen++;
 	srclen = ft_strlen(src);
 	if (size <= dstlen)
